@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MethodTimer;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,7 @@ namespace BooksProblem
 {
     public static class Problem
     {
+        [Time]
         public static int MaxPages(int n, int x, int[] c, int[] s)
         {
             int[,] dp = new int[n+1,x+1];
